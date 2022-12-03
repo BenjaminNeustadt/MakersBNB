@@ -12,7 +12,7 @@ body {
 
 #main{
   background-image: url('https://i.insider.com/5d6799566f24eb5bb9563b03?width=1000&format=jpeg&auto=webp');
-  background-repeat: no-repeat;    
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -21,7 +21,7 @@ body {
   height: 100vh;
   /* background-color: white; */
   font-size: 40px;
-  background-repeat: no-repeat;    
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -140,7 +140,7 @@ nav ul li {
   text-align: center;
 }
 
-/* #login-btn { 
+/* #login-btn {
   width: 150px;
   height: 45px;
   border: 1px solid black;
