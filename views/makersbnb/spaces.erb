@@ -1,16 +1,40 @@
-<a href="/makersbnb">Home</a>
-<a href="/makersbnb/requests">Requests </a>
+<!DOCTYPE html>
+<head> 
+  <link href="<%= url('/index.css') %>" rel="stylesheet" type="text/css" />
+  <link href="<%= url('/spaces.css') %>" rel="stylesheet" type="text/css" />
+</head>
 
+<body>
+  <section class="hero-section">
+    <nav>
+      <ul>
+         <li><a href="/makersbnb/member">Home</a></li>
+        <li><a href="/makersbnb/spaces">Spaces </a></li>
+        <li><a href="/makersbnb/requests">Requests </a></li>
+        <li><a href="/makersbnb/add">Add Space</a></li>
+       <li><a href="/makersbnb">Sign Out </a></li>
+      </ul>
+    </nav>  
+
+
+<div class="title-container">
 <h2>Book a Space </h2>
+</div>
 
-<%# 'Name: Happy House, Description: A really cosy space, where you can relax, Price: 24$/night' %>
-<ul style="list-style: none;">
+<div id='form-container'>
+<ul style="list-style: none; display: inline-block; float: center;" id="space-list">
   <% @spaces.each do |space| %>
-     <li>Name: <%= space[0] %>, </li>
-     <li>Description: <%= space[1] %>, </li>
-     <li>Price: <%= space[2] %></li><br>
+     <li>Name: <%= space[0] %></li>
+     <li>Description: <%= space[1] %></li>
+     <li>Price: <%= space[2] %></li>
       <form action="/makersbnb/requests" method="get">
-        <button type="submit" name="requests"> Request to Book </button>
-      </form>
+        <button class="spaces-buttons" type="submit" name="requests"> Request to Book </button>
+      </form><br>
   <% end %>
 <ul>
+
+</div>
+
+</section>
+</body>
+

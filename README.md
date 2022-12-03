@@ -1,9 +1,6 @@
-# Notes/updates during development
-
-* MVP1 has been merged into main
-* feature1_book_space has been merged into MVP1
-* These are currently obsolete
-* Created a new branch db_integration
+# Overview
+- Building a web app that allows users to login to an accomodation rental site
+- Users can add rental spaces, book rental spaces and reciveve confirmation of booking 
 
 # Group Collabrators 
 
@@ -12,6 +9,13 @@
 - [Aisha](https://github.com/Aisha-Yusuff)
 - [Amir](https://github.com/ak2022dev)
 - [Naz H](https://github.com/nazhudha)
+
+# Notes/updates during development
+
+* MVP1 has been merged into main
+* feature1_book_space has been merged into MVP1
+* These are currently obsolete
+* Created a new branch db_integration
 
 # Headline specifications
 
@@ -22,6 +26,21 @@
 * Any signed-up user can request to hire any space for one night, and this should be approved by the user     that owns that space.
 * Nights for which a space has already been booked should not be available for users to book that space.
 * Until a user has confirmed a booking request, that space can still be booked for that night.
+
+# Design
+
+## Class Responsibility Collaboration Cards
+
+![Class Responsibility Collaboration Cards](./assets/crc_cards.png)
+
+## Data Design
+
+![Data Design](./assets/data_model.png)
+
+# Screen Shots
+![Main Page](./assets/main_page.png) 
+![Add Spaces Page](./assets/add_spaces.png)
+![Requests Page](./assets/requests_page.png)
 
 
 ## ITERATIONS

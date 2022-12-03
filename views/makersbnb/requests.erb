@@ -1,17 +1,40 @@
-<a href="/makersbnb">Home</a>
-<a href="/makersbnb/spaces">Spaces </a>
 
-<h1>My Requests</h1>
-<h3>Your booking request is now confirmed</h3><br>
+<!DOCTYPE html>
+<head> 
+  <link href="<%= url('/index.css') %>" rel="stylesheet" type="text/css" />
+  <link href="<%= url('/requests.css') %>" rel="stylesheet" type="text/css" />
+</head>
 
+<body>
+  <section class="hero-section">
+    <nav>
+      <ul>
+        <li><a href="/makersbnb/member">Home</a></li>
+        <li><a href="/makersbnb/spaces">Spaces </a></li>
+        <li><a href="/makersbnb/requests">Requests </a></li>
+        <li><a href="/makersbnb/add">Add Space</a></li>
+       <li><a href="/makersbnb">Sign Out </a></li>
+      </ul>
+    </nav>  
+<div>
+
+<div class="title-container">
+<h2>My Requests</h2>
+</div>
+
+<div id='form-container'>
+<ul style="list-style: none; display: inline-block; float: center;">
+<li>Your booking request is now confirmed</><br><br>
 <% if @approved_message %>
-<h3> <%= @approved_message %></h3>
+<li > <%= @approved_message %></li><br>
 <% end %>
-
-<%# <form action="/" method="get">
-<button type="submit" name="ok">Ok</button>
-</form> %>
-
 <form action="/makersbnb/requests" method="post">
-<button type="submit" name="ok">Ok</button>
+<button class="form-buttons" type="submit" name="ok">Ok</button>
 </form>
+</ul>
+</div>
+
+</section>
+
+
+</body>

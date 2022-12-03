@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head> 
+  <link href="<%= url('/index.css') %>" rel="stylesheet" type="text/css" />
+</head>
+
+
+<body>
+  <section class="hero-section" id="main">
+    <nav>
+      <ul>
+        <li><a href="/makersbnb/member">Home</a></li>
+         <li><a href="/makersbnb/spaces">Spaces </a></li>
+        <li><a href="/makersbnb/requests">Requests </a></li>
+        <li><a href="/makersbnb/add">Add Space</a></li>
+        <li><a href="/makersbnb">Sign Out </a></li>
+
+      </ul>
+    </nav>
+
+    <div class="hero-area">
+      <div class="hero-text">
+        <h1>Welcome <%= @name %>!</h1>
+        <p>What would you like to do today?</p>
+        <div id='login-signup-container'>
+          <form action="/makersbnb/spaces" method="get">
+            <input class="button" type="submit" value="Book a space">
+          </form>
+          <form action="/makersbnb/add" method="get">
+            <input class="button" type="submit" value="Add a space">
+          </form>
+        </div>
+      </div>
+   </div>
+  </section>
+</body>
+
+

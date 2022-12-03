@@ -27,5 +27,4 @@ describe DatabaseConnection do
       DatabaseConnection.query("SELECT * FROM spaces;")
     end
   end
-  
 end

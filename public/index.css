@@ -1,0 +1,234 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* MAIN HERO SECTION ---------->>>>>>>>>>>*/
+
+.hero-section {
+  height: 100vh;
+  /* background-color: white; */
+  font-size: 40px;
+}
+
+#main{
+  background-image: url('https://i.insider.com/5d6799566f24eb5bb9563b03?width=1000&format=jpeg&auto=webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-section {
+  height: 100vh;
+  /* background-color: white; */
+  font-size: 40px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-section li a, a {
+  text-decoration: none ;
+  color: white;
+}
+
+p {
+  margin-right: 0px;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.hero-area {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+}
+
+.hero-text {
+  margin-left: 80px;
+  margin-bottom: 200px;
+  position: relative;
+  left: -0.9em;
+}
+
+h1 {
+  font-size: 5rem;
+  margin: 0px;
+  /* margin: 0px; */
+  color: #FFFFFF;
+}
+
+.hero-text p {
+  font-size: 1.8rem;
+  color: #FFFFFF;
+}
+
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-buttons {
+  width: 100%;
+  background-color: #f0774e;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.spaces-buttons {
+  background-color: #f0774e;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* NAV BAR  ---------->>>>>>>>>>>*/
+nav {
+  display: flex;
+  justify-content: flex-end;
+  /* position: fixed; */
+  height: 50px;
+  width: 100%;
+  background-color: #000000;
+  /* box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205); */
+  z-index: 999;
+  transition: background 1s ease;
+  opacity: 80%;
+  top: 10px;
+}
+
+.hero-section ul {
+  display: flex;
+  list-style-type: none;
+  width: 500px;
+  justify-content: space-around;
+  font-size: 1.4rem;
+  position: relative;
+  left: -1em;
+  margin-bottom: 0px;
+  top: -8px;
+}
+
+nav ul li {
+  border-radius: 100px;
+  margin-right: 5px;
+}
+
+
+
+ ul li {
+  border-radius: 100px;
+}
+
+/* LOGGING IN BUTTONS */
+#login-signup-container {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 10px;
+  text-align: center;
+}
+
+/* #login-btn {
+  width: 150px;
+  height: 45px;
+  border: 1px solid black;
+  border-radius: 30px;
+  background-color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding-top: 5px;
+  margin: 15px;
+  color: black;
+}
+
+#signup-btn {
+  width: 150px;
+  height: 45px;
+  border: 1px solid black;
+  border-radius: 30px;
+  background-color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding-top: 5px;
+  margin: 15px;
+  color: black;
+} */
+
+
+/* SPACES AND REQUESTS PAGES ---------->>>>>>>>>>> */
+#form-container {
+  background-color: #F2F2F2;
+  display: flex;
+  flex-direction: row;
+  margin: 3rem auto auto;
+  align-items: center;
+  max-width: 400px;
+  width: 100%;
+  padding: 3rem;
+  border: 1px black solid;
+  border-radius: 5px;
+}
+
+#space-list li {
+  text-decoration: none;
+  display: in-block;
+}
+
+#another-space-link {
+  color: green;
+
+}
+
+/* OTHER add Hoc */
+.title-container {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+.button {
+  width: 180px;
+  height: 45px;
+  border: 1px solid black;
+  border-radius: 30px;
+  background-color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding-top: 5px;
+  margin: 0px, 10px, 0px, 10px;
+  color: black;
+}
+
+.button:hover, nav ul li:hover{
+  /* background-color: #FFFFFF; */
+  cursor: pointer;
+  border-color: #F9F871;
+  color: #f0774e;
+  box-shadow: 0 0.7em 1em -0.5em #F9F871;
+  transform: translateY(0.1em);
+}
+
+.button:active {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+h2 {
+  /* font-size: medium; */
+
+}

@@ -1,8 +1,39 @@
-Here is a confirmation of your new space details: <br>
-Name: <%=@space[0]%> <br>
-Description: <%=@space[1]%>
-<a href="/makersbnb/add">Add another space</a>
+<!DOCTYPE html>
+<head> 
+  <link href="<%= url('/index.css') %>" rel="stylesheet" type="text/css" />
+</head>
 
-<form action="/makersbnb/spaces" method="get">
-  <button type="submit" name="requests"> view all spaces </button>
+<body>
+  <section class="hero-section">
+    <nav>
+      <ul>
+        <li><a href="/makersbnb/member">Home</a></li>
+        <li><a href="/makersbnb/spaces">Spaces</a></li>
+        <li><a href="/makersbnb/requests">Requests </a></li>
+        <li><a href="/makersbnb/add">Add_Space </a></li>
+       <li><a href="/makersbnb">Sign Out </a></li>
+      </ul>
+    </nav>  
+<div>
+
+<div class="title-container">
+<h2>Here are the confirmation details for your new space:</h2>
+</div>
+
+<div id='form-container'>
+<ul style="display: inline-block; float: center;" id="space-list">
+  <li>Name: <%=@space[0]%></li>
+  <li>Description: <%=@space[1]%></li>
+  <li>Price: <%=@space[2]%></li>
+  <form action="/makersbnb/add" method="get">
+  <button class="form-buttons" type="submit" name="Add another space">Add another space</button>
 </form>
+  <%# <li><a href="/makersbnb/add" id="another-space-link">Add another space</a></li> %>
+<form action="/makersbnb/spaces" method="get">
+  <button class="form-buttons" type="submit" name="requests"> View all spaces </button>
+</form>
+</ul>
+</div>
+</section>
+</body>
+

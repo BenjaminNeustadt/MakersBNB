@@ -4,4 +4,4 @@ CREATE TABLE users (
   name text,
   email VARCHAR ( 60 ) UNIQUE,
   password VARCHAR ( 30 ));
-  
+

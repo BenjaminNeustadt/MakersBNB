@@ -8,11 +8,13 @@ feature "Booking a space" do
     click_button('requests', match: :first) 
     expect(page).to have_content "Your booking request is now confirmed"
   end 
-
-  scenario 'user can reach the booking page from the homepage' do
-    visit '/makersbnb'
-    click_on 'Spaces'
-    expect(page).to have_content 'Book a Space'
+  
+  context "when a user has signed up" do
+    scenario 'user can reach the booking page from the homepage' do
+      visit '/makersbnb/member'
+      click_on 'Spaces'
+      expect(page).to have_content 'Book a Space'
+    end
   end
 
   context "After a user has booked a space" do 
