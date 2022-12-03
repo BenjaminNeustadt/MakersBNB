@@ -1,8 +1,8 @@
 # Overview
 - Building a web app that allows users to login to an accomodation rental site
-- Users can add rental spaces, book rental spaces and reciveve confirmation of booking 
+- Users can add rental spaces, book rental spaces and reciveve confirmation of booking
 
-# Group Collabrators 
+# Group Collabrators
 
 - [Ben](https://github.com/BenjaminNeustadt)
 - [Kay](https://github.com/kaykakaraka)
@@ -38,7 +38,7 @@
 ![Data Design](./assets/data_model.png)
 
 # Screen Shots
-![Main Page](./assets/main_page.png) 
+![Main Page](./assets/main_page.png)
 ![Add Spaces Page](./assets/add_spaces.png)
 ![Requests Page](./assets/requests_page.png)
 
@@ -57,7 +57,7 @@ Iteration 5: pending
 `So that I can choose a place to stay` \ 
 `I need to see available spaces with a name, description and price.`
 
-TDD steps: 
+TDD steps:
 
 - view_index_spec.rb in /features (connection test) [rspec] => PASSED
 
